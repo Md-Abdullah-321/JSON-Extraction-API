@@ -6,12 +6,14 @@
  */
 
 import bodyParser from "body-parser";
+import cors from "cors"; // ✅ Add CORS
 import express from "express";
 import Tesseract from "tesseract.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors()); // ✅ Allow requests from anywhere
 app.use(bodyParser.json({ limit: "10mb" }));
 
 app.post("/extract-json", async (req, res) => {
