@@ -20,7 +20,7 @@ This project is an Express.js-based API that uses `tesseract.js` to extract key-
 
 ```bash
 git clone https://github.com/Md-Abdullah-321/JSON-Extraction-API
-cd ocr-json-extractor
+cd JSON-Extraction-API
 npm install
 ```
 
